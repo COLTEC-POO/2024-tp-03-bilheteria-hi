@@ -13,10 +13,10 @@ public class Concerto extends Evento {
             if (novo_I.tipo == 'V' && ingressos_VipDisp() <= quantiaIngressos * 0.1 && ingressos_VipDisp()>  0 ||(novo_I.tipo == 'C' || novo_I.tipo == 'M')) {
                 this.ingressos_V.add(novo_I);
             } else {
-                JOptionPane.showMessageDialog(null, "Os ingressos VIP já esgotaram :(", "*ERRO*", JOptionPane.ERROR_MESSAGE);
+                JOptionPane.showMessageDialog(null, "Os ingressos VIP já esgotaram para o concerto :(", "*ERRO*", JOptionPane.ERROR_MESSAGE);
             }
         }else{
-             JOptionPane.showMessageDialog(null, "Os ingressos deste evento já esgotaram :(", "*ERRO*", JOptionPane.ERROR_MESSAGE);
+             JOptionPane.showMessageDialog(null, "Os ingressos para o concerto evento já esgotaram :(", "*ERRO*", JOptionPane.ERROR_MESSAGE);
         }
     }
 
