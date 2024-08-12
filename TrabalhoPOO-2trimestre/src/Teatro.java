@@ -14,10 +14,10 @@ public class Teatro extends Evento {
             } else if (novo_I.tipo == 'V' || novo_I.tipo == 'C') {
                 this.ingressos_V.add(novo_I);
             } else if(novo_I.tipo == 'M' && ingressos_MeiaDisp() > quantiaIngressos * 0.2 ){
-                JOptionPane.showMessageDialog(null, "Os ingressos Meia-Entrada já esgotaram :(", "*ERRO*", JOptionPane.ERROR_MESSAGE);
+                JOptionPane.showMessageDialog(null, "Os ingressos Meia-Entrada para a peça de teatro já esgotaram :(", "*ERRO*", JOptionPane.ERROR_MESSAGE);
             }
         }else{
-            JOptionPane.showMessageDialog(null, "Os ingressos para este evento já esgotaram :(", "*ERRO*", JOptionPane.ERROR_MESSAGE);
+            JOptionPane.showMessageDialog(null, "Os ingressos para a peça de teatro já esgotaram :(", "*ERRO*", JOptionPane.ERROR_MESSAGE);
         }
     }
 
